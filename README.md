@@ -64,3 +64,85 @@ The project focuses on building a production-oriented RAG pipeline for document 
                         │
                         ▼
                     AI Answer
+
+
+
+Document
+   │
+   ▼
+Text Extraction
+   │
+   ▼
+Text Cleaning
+   │
+   ▼
+Chunking
+   │
+   ▼
+Embedding Generation
+   │
+   ▼
+Vector Storage
+   │
+   ▼
+User Query
+   │
+   ▼
+Query Embedding
+   │
+   ▼
+Similarity Search
+   │
+   ▼
+Relevant Chunks
+   │
+   ▼
+LLM
+   │
+   ▼
+Final Answer
+
+
+
+
+advanced-rag-document-assistant/
+│
+├── config/
+│   └── Django project configuration
+│
+├── rag/
+│   ├── ingestion.py
+│   ├── embeddings.py
+│   ├── chunking.py
+│   ├── retrieval.py
+│   ├── vector_store.py
+│   └── views.py
+│
+├── data/
+│   └── documents/
+│
+├── tests/
+│
+├── chroma_db/
+│
+├── manage.py
+├── requirements.txt
+├── .env.example
+├── .gitignore
+└── README.md
+
+
+
+User Query
+    │
+    ▼
+Query Embedding
+    │
+    ▼
+Vector Similarity Search
+    │
+    ▼
+Top Relevant Chunks
+    │
+    ▼
+Retrieved Context
